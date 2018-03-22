@@ -1,0 +1,31 @@
+{
+  "name": "herokutest",
+  "version": "1.0.0",
+  "description": "Exemplo de node no heroku",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgnrgoncalves/herokutest.git"
+  },
+  "keywords": [
+    "exemplo",
+    "heroku"
+  ],
+  "author": "wgnrgoncalves@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wgnrgoncalves/herokutest/issues"
+  },
+  "homepage": "https://github.com/wgnrgoncalves/herokutest#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
