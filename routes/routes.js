@@ -9,6 +9,7 @@ var appRouter = function (app) {
 
     app.get("/api/producao/unidades", function (req, res) {
         
+        console.log(req);
         res.status(200).send(unidades);
     });
 

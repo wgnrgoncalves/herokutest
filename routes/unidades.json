@@ -1,0 +1,8 @@
+[
+    {"codigo": "001", "nome" : "CENTRAL"},
+    {"codigo": "002", "nome" : "Unidade 002"},
+    {"codigo": "003", "nome" : "Unidade 003"},
+    {"codigo": "004", "nome" : "Unidade 004"},
+    {"codigo": "005", "nome" : "Unidade com nome grande 005"},
+    {"codigo": "006", "nome" : "Unidade com nome grande 006"}
+]
