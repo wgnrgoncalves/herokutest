@@ -1,11 +1,17 @@
 'use strict'
 const express = require('express');
 const path = require('path');
+var bodyParser = require("body-parser");
+var routes = require("./routes/routes.js");
 const PORT = process.env.PORT || 5000;
 
-express()
-    .use(express.static(path.join(__dirname, 'public')))
+
+var app = express();
+app.use(express.static(path.join(__dirname, 'public')))
+    .use(bodyParser.json())
+    .use(bodyParser.urlencoded({extended : true}))
     .set('views', path.join(__dirname, 'views'))
     .set('view engine', 'ejs')
-    .get('/', (req, res) => res.render('pages/index'))
     .listen(PORT, () => console.log(`Listen on ${PORT}`));
+
+routes(app);
